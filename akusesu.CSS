@@ -1,0 +1,8 @@
+body {
+        background-color: #ebdcc8; /* ベージュ色 */
+        margin: 0;
+      }
+        .image-container{
+          text-align: center; /* 中身を中央揃えにする */
+      }   
+        

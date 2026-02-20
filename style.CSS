@@ -1,0 +1,50 @@
+body {
+        background-image: 
+          linear-gradient(rgba(225,225,225,0.05),rgba(225,225,225,1)),url(IMG_8397-2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        /*background-color: #ebdcc8; ベージュ色 */
+        margin: 0;
+      }
+        .image-container{
+          text-align: center; /* 中身を中央揃えにする */
+      }   
+        .image-link {
+           display: inline-block; /* ② 画像サイズに合わせる */
+           position: relative; /* ① 基準点にする */
+           vertical-align: top;
+           margin: 0;
+           padding: 0;
+           line-height: 0;  /*隙間を消せる（予定）*/
+      }
+      
+        
+        .kako-link{
+         height: auto;       /*高さは自動で調整 */
+         /*display: block;     画像下の余分な隙間を消す場合がある  */
+         width: 100%;         /* 画面の幅に対して100%の大きさにする こっちはパソコンでは綺麗　スマホやとでかいかも*/
+         /*width: 80%;   スマホにはこっちがあってるけどパソコンは変な枠映る*/
+         max-width: 400px;   /* ← この数値をデザインに合わせて調整  */
+         vertical-align: top;  /*画像下の隙間を消せる（はず）*/
+      }
+        .overlay {
+         position: absolute; /* ③ 親要素を基準に配置 */
+         top: 0;             /* ④ 親要素の上辺に合わせる */
+         left: 0;            /* ⑤ 親要素の左辺に合わせる */
+         right: 0;           /*   ⑥. */
+         width: 100%;        /* ⑦ 親要素と同じ幅にする */
+         height: 100%;       /* ⑧ 親要素と同じ高さにする */
+         background-color: rgba(255, 255, 255, 0.4); /* ⑨ 半透明の白にする(255,255,255)→白 */
+         opacity: 0;         /* ⑩ 最初は透明で見えなくする */
+         transition: opacity 0.3s ease; /* 11 変化を滑らかにする */
+      }
+         
+        .image-link:hover .overlay {
+         opacity: 1; /* ⑪ ホバー時に表示する */
+      }
+        .large-link{
+          height: auto;
+          width: 100%;
+          max-width: 1327px;
+          vertical-align: top;
+        }

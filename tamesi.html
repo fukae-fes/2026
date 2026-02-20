@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ナビゲーションメニューの例</title>
+
+    <style>
+        
+        /* 1. メニュー全体（<nav>タグ）の設定 */
+        .main-nav {
+            background-color: #ebdcc8; /* メニューの背景色（薄いベージュー） */
+            border-bottom: 2px solid #ccc; /* メニューの下に線を引く */
+        }
+
+        /* 2. リンクのリスト（<ul>タグ）の設定 */
+        .main-nav ul {
+            display: flex;         /* ★魔法の言葉！ 中身(li)を横並びにする */
+            list-style: none;      /* ・←この黒い点を消す */
+            margin: 0;             /* ブラウザ標準の余白を消す */
+            padding: 0;            /* ブラウザ標準の余白を消す */
+        }
+
+        /* 3. 各リンクのボタン（<a>タグ）の設定 */
+        .main-nav a {
+            display: block;        /* リンクの領域を「ブロック」にして広げる */
+            padding: 15px 20px;    /* ボタンの余白 (上下に15px, 左右に20px) */
+            text-decoration: none; /* リンクの下線を消す */
+            color: #333;           /* 文字色を黒っぽくする */
+            font-size: 16px;       /* 文字サイズ */
+        }
+
+        /* 4. マウスが乗った時（:hover）の設定 */
+        .main-nav a:hover {
+            background-color: #e4c96f; /* マウスが乗ったら背景色を濃くする */
+        }
+
+    </style>
+    </head>
+<body>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="hukaesai.html">ホーム</a></li>
+            <li><a href="mogiten.html">模擬店</a></li>
+            <li><a href="okugaikikaku.html">ステージ企画</a></li>
+            <li><a href="akusesu.html">アクセス</a></li>
+            <li><a href="kyosan.html">協賛企業様</a></li>
+					</ul>
+
+    </nav>
+
+    <h1>ようこそ！</h1>
+    <p>ここはページの本体です。</p>
+
+</body>
+</html>
