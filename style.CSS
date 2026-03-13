@@ -21,6 +21,8 @@ body {
            margin: 0;
            padding: 0;
            line-height: 0;  /*隙間を消せる（予定）*/
+           overflow: hidden;      /* 【重要】これではみ出し（突き抜け）をカット！ */
+           border-radius: 15px;   /* 画像と同じ角丸をここにも付ける */
       }
       
         
@@ -82,7 +84,7 @@ body {
         img {
           max-width: 90% !important; /* 画面の端に少し余白を作る */
           height: auto !important;
-          display: block !important;
+          display: inline-block !important;
           /* margin: 20px auto !important; 画像を中央に寄せる */
         }
 
