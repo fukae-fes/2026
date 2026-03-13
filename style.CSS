@@ -73,6 +73,11 @@ body {
           margin-right: 0 !important;
         }
 
+        h2 {
+          font-size: 5.5vw !important; /* 文字数が多いのでさらに小さく調整 */
+          white-space: nowrap !important; /* これで1行に強制します */
+        }
+        
         /* 2. ポスター画像などの画像を画面内に収める */
         img {
           max-width: 95% !important; /* 画面の端に少し余白を作る */
