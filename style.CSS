@@ -1,4 +1,9 @@
 body {
+        
+        text-align: center; /* これでテキストもインライン要素も全部中央へ */
+        margin: 0;
+        padding: 0;
+        /* 背景の設定などはそのまま */
         background-image: 
           linear-gradient(rgba(225,225,225,0.05),rgba(225,225,225,1)),url(IMG_8397-2.jpg);
         background-size: cover;
@@ -47,4 +52,38 @@ body {
           width: 100%;
           max-width: 1327px;
           vertical-align: top;
+      }
+         
+        .poster-link{
+         height: auto;       /*高さは自動で調整 */
+         /*display: block;     画像下の余分な隙間を消す場合がある  */
+         width: 100%;         /* 画面の幅に対して100%の大きさにする こっちはパソコンでは綺麗　スマホやとでかいかも*/
+         /*width: 80%;   スマホにはこっちがあってるけどパソコンは変な枠映る*/
+         max-width: 550px;   /* ← この数値をデザインに合わせて調整  */
+         vertical-align: top;  /*画像下の隙間を消せる（はず）*/
+      }
+
+        /* 1. タイトルの巨大文字をスマホサイズに強制変更 */
+        @media screen and (max-width: 768px) {  
+        .title {
+          font-size: 40px !important; /* 100pxから40pxに縮小 */
+          text-align: center !important;
+          width: 100% !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
         }
+
+        /* 2. ポスター画像などの画像を画面内に収める */
+        img {
+          max-width: 95% !important; /* 画面の端に少し余白を作る */
+          height: auto !important;
+          display: block !important;
+          margin: 20px auto !important; /* 画像を中央に寄せる */
+        }
+
+        /* 3. 横に突き抜ける要素を隠して「左寄り」を解消 */
+        body {
+          overflow-x: hidden !important;
+          width: 100% !important;
+        }
+      }
