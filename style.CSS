@@ -74,10 +74,10 @@ body {
         }
 
         h2 {
-          font-size: 5.5vw !important; /* 文字数が多いのでさらに小さく調整 */
+          font-size: 6.5vw !important; /* 文字数が多いのでさらに小さく調整 */
           white-space: nowrap !important; /* これで1行に強制します */
         }
-        
+
         /* 2. ポスター画像などの画像を画面内に収める */
         img {
           max-width: 95% !important; /* 画面の端に少し余白を作る */
@@ -90,5 +90,11 @@ body {
         body {
           overflow-x: hidden !important;
           width: 100% !important;
+        }
+
+        h2.title {
+          font-size: 6.2vw !important; 
+          white-space: nowrap !important;
+          text-align: center !important;
         }
       }
