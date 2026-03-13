@@ -83,7 +83,7 @@ body {
           max-width: 100% !important; /* 画面の端に少し余白を作る */
           height: auto !important;
           display: block !important;
-          margin: 20px auto !important; /* 画像を中央に寄せる */
+          /* margin: 20px auto !important; 画像を中央に寄せる */
         }
 
         /* 3. 横に突き抜ける要素を隠して「左寄り」を解消 */
