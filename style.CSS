@@ -37,8 +37,8 @@ body {
          top: 0;             /* ④ 親要素の上辺に合わせる */
          left: 0;            /* ⑤ 親要素の左辺に合わせる */
          right: 0;           /*   ⑥. */
-         width: 100%;        /* ⑦ 親要素と同じ幅にする */
-         height: 100%;       /* ⑧ 親要素と同じ高さにする */
+         width: 95%;        /* ⑦ 親要素と同じ幅にする */
+         height: 95%;       /* ⑧ 親要素と同じ高さにする */
          background-color: rgba(255, 255, 255, 0.4); /* ⑨ 半透明の白にする(255,255,255)→白 */
          opacity: 0;         /* ⑩ 最初は透明で見えなくする */
          transition: opacity 0.3s ease; /* 11 変化を滑らかにする */
@@ -80,7 +80,7 @@ body {
 
         /* 2. ポスター画像などの画像を画面内に収める */
         img {
-          max-width: 100% !important; /* 画面の端に少し余白を作る */
+          max-width: 95% !important; /* 画面の端に少し余白を作る */
           height: auto !important;
           display: block !important;
           /* margin: 20px auto !important; 画像を中央に寄せる */
