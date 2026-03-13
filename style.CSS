@@ -80,6 +80,12 @@ body {
           white-space: nowrap !important; /* これで1行に強制します */
         }
 
+        /* スマホでは枠自体を 90% に制限する */
+        .image-link {
+          max-width: 90% !important; 
+          margin: 10px auto !important; /* これで中央に寄ります */
+        }
+
         /* 2. ポスター画像などの画像を画面内に収める */
         img {
           max-width: 90% !important; /* 画面の端に少し余白を作る */
