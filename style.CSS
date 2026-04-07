@@ -66,7 +66,8 @@ body {
       }
 
         /* 1. タイトルの巨大文字をスマホサイズに強制変更 */
-        @media screen and (max-width: 768px) {  
+        @media screen and (max-width: 768px)
+      {  
         .title {
           font-size: 40px !important; /* 100pxから40pxに縮小 */
           text-align: center !important;
@@ -104,5 +105,16 @@ body {
           font-size: 5.0vw !important; 
           white-space: nowrap !important;
           text-align: center !important;
+        }
+
+        .image-link {
+           display: inline-block; /* ② 画像サイズに合わせる */
+           position: relative; /* ① 基準点にする */
+           vertical-align: top;
+           margin: 0;
+           padding: 0;
+           line-height: 0;  /*隙間を消せる（予定）*/
+           overflow: hidden;      /* 【重要】これではみ出し（突き抜け）をカット！ */
+           border-radius: 15px;   /* 画像と同じ角丸をここにも付ける */
         }
       }
