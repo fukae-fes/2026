@@ -82,8 +82,8 @@ body {
         }
 
         h3{
-          font-size: 6.5vw !important;
-          /* white-space: nowrap !important; */
+          font-size: 7.0vw !important;
+          white-space: nowrap !important; 
         }
 
         /* スマホでは枠自体を 90% に制限する */
