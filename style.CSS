@@ -76,7 +76,7 @@ body {
         }
 
         h2 {
-          font-size: 6.5vw !important; /* 文字数が多いのでさらに小さく調整 */
+          font-size: 6.2vw !important; /* 文字数が多いのでさらに小さく調整 */
           white-space: nowrap !important; /* これで1行に強制します */
         }
 
